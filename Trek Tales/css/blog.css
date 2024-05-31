@@ -1,0 +1,125 @@
+:root{
+    --orange:#ffcd46;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    transition: 0.2s linear;
+}
+
+  
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+    overflow-x: hidden;
+}
+
+section{
+    padding:60px 90px;
+}
+
+.heading{
+    text-align: center;
+    font-size: 30px;
+    color:#333;
+    padding:9px;
+    margin-top: 60px;
+    background:#f7e7bf;
+}
+
+header{
+    position: fixed;
+    top:0; left:0; right:0;
+    background-color: #333;
+    padding:15px 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+header .logo span{
+    color:var(--orange);
+}
+
+header .navbar a{
+    font-size: 15px;
+    padding:0 15px;
+    color:#faf8f8;
+}
+
+header .navbar a:hover{
+    color:var(--orange);
+}
+
+
+.products .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:25px;
+}
+
+.products .box-container .box{
+    flex:1 1 300px;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: 5px;
+    border:1px solid rgba(0,0,0,.1);
+    position: relative;    
+    margin-bottom: 10px;
+}
+
+
+.products .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 0px;
+    overflow:hidden;
+}
+
+.products .box-container .box .image img{
+    height:215px;
+    width: 330px;
+}
+
+.products .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+
+
+.products .box-container .box .content{
+    display: block;
+    padding:25px;
+}
+
+.products .box-container .box .content h3 a{
+    color: var(--orange);
+    text-decoration: none;
+}
+.products .box-container .box .content h3 a:hover{
+    color: #ffbb00;
+}
+.products .box-container .box .content h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.products .box-container .box .content span{
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    text-align: left;
+    letter-spacing: 1px;
+    line-height: 1.3;
+}
